@@ -1,4 +1,22 @@
-
+ int arreglo[]={4,1,5,2,3};
+    int dato;
+    boolean band=false;
+    System.out.println("Ingrese numero a buscar;");
+    dato=leer.nextInt();
+    int i=0;
+    while(i<5 && band==false){
+        if(arreglo[i]==dato){
+            band=true;
+        }
+        i++;
+    }
+    if(band==false){
+        System.out.println("El numero no se pudo encontrar");
+        
+    }else{
+        System.out.println("el numero ha sido encontrado en la posicion: "+(i-1));
+    }
+--------------------------------------------------------------------------
  int canalu,i;
        System.out.println("Ingrese cantidad de alumnos: ");
         canalu=leer.nextInt();
